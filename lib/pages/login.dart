@@ -88,6 +88,7 @@ class _LoginPageState extends State<LoginPage> {
                         if (user != null) {
                           setState(() {
                             loading = false;
+                            //
                           });
                           Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {
