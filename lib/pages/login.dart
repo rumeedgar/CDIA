@@ -61,8 +61,9 @@ class _LoginPageState extends State<LoginPage> {
                     return null;
                   },
                   obscureText: true,
+                  // ignore: prefer_const_constructors
                   decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: const OutlineInputBorder(),
                       labelText: "Password",
                       hintText: "Password"),
                   style: const TextStyle(fontSize: 18),
@@ -88,8 +89,8 @@ class _LoginPageState extends State<LoginPage> {
                         if (user != null) {
                           setState(() {
                             loading = false;
-                            //
                           });
+                          // ignore: use_build_context_synchronously
                           Navigator.pushReplacement(context,
                               MaterialPageRoute(builder: (context) {
                             return HomePage();
