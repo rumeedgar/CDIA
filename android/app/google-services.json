@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "897276494592",
+    "project_id": "cdia-24b24",
+    "storage_bucket": "cdia-24b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897276494592:android:e31bf7874d09530c34e9e5",
+        "android_client_info": {
+          "package_name": "com.example.cdia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897276494592-qs2a0stvirf5hk9fhtm19b0ccdvp5jr5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9IfQWjp95alPaXBebZT_3wYeKKHUdFN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897276494592-qs2a0stvirf5hk9fhtm19b0ccdvp5jr5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
