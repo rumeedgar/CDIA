@@ -73,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
                 padding: const EdgeInsets.symmetric(horizontal: 15),
                 child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                        minimumSize: Size(double.infinity, 50)),
+                        minimumSize: const Size(double.infinity, 50)),
                     onPressed: () async {
                       //Login Process
                       try {
@@ -117,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
                       }
                     },
                     child: loading
-                        ? CircularProgressIndicator(
+                        ? const CircularProgressIndicator(
                             valueColor: AlwaysStoppedAnimation(Colors.white),
                           )
                         : const Text("Login")),
@@ -127,12 +127,13 @@ class _LoginPageState extends State<LoginPage> {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return SignUpPage();
+                      return const SignUpPage();
                     }));
                   },
+                  // ignore: prefer_const_constructors
                   child: Text(
                     "Don't have an account?",
-                    style: TextStyle(fontSize: 19),
+                    style: const TextStyle(fontSize: 19),
                   ))
             ]),
           ),
