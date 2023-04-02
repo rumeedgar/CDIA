@@ -1,6 +1,6 @@
 # cdia
 
-A new Flutter project.
+A mobile application to detect cocoa diseases.
 
 ## Getting Started
 
