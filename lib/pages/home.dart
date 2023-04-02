@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:cdia/pages/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +55,25 @@ class _HomePageState extends State<HomePage> {
   }
 
   pickImage() async{
-    var image = await picker.getImage(source: source)
+    var image = await picker.pickImage(source: ImageSource.camera);
+    if (image == null) return null;
+
+    setState(() {
+      _image = File(image.path);
+    });
+
+    detectImage(_image);
+  }
+
+    pickGalleryImage() async{
+    var image = await picker.pickImage(source: ImageSource.gallery);
+    if (image == null) return null;
+
+    setState(() {
+      _image = File(image.path);
+    });
+
+    detectImage(_image);
   }
 
   @override
